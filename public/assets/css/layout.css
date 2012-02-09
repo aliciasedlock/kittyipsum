@@ -1,0 +1,55 @@
+
+/* = Fonts
+------------------------*/
+
+@font-face {
+    font-family: 'SFCartoonistHandRegular';
+    src: url('../fonts/SF_Cartoonist_Hand-webfont.eot');
+    src: url('../fonts/SF_Cartoonist_Hand-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/SF_Cartoonist_Hand-webfont.woff') format('woff'),
+         url('../fonts/SF_Cartoonist_Hand-webfont.ttf') format('truetype'),
+         url('../fonts/SF_Cartoonist_Hand-webfont.svg#SFCartoonistHandRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'SFCartoonistHandBold';
+    src: url('../fonts/SF_Cartoonist_Hand_Bold-webfont.eot');
+    src: url('../fonts/SF_Cartoonist_Hand_Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/SF_Cartoonist_Hand_Bold-webfont.woff') format('woff'),
+         url('../fonts/SF_Cartoonist_Hand_Bold-webfont.ttf') format('truetype'),
+         url('../fonts/SF_Cartoonist_Hand_Bold-webfont.svg#SFCartoonistHandBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* = Global Layout
+------------------------*/
+
+body {font-family: Arial; margin:0; padding:0}
+
+.ki {background-color: #fff; margin:0 auto; min-height:600px; width:650px}
+
+.ki h1 {font-family: "SFCartoonistHandBold"; font-size:4em; margin:0; padding:0}
+.ki h1 a {color:#000; text-decoration:none;}
+.ki h2 {font-family:"SFCartoonistHandRegular"; font-size:2em}
+
+.ki nav {background: #eaeaea; padding:.5em 1em; text-align:center}
+.ki nav a {color:purple; font-size:.95em; margin: 0 2.5em; text-decoration: none;}
+
+footer {background: #eaeaea; color:#666; font-size:.85em; margin: 2em 0 0; padding: 3em; text-align:center;}
+
+
+/* = Search Template
+------------------------*/
+
+.ki-search {text-align:center}
+.ki-search h2 {margin:1em 0 .25em;}
+.ki-search .count-input {font-size: 2em; margin-bottom:2em; text-align:center; width: 3em}
+
+
+
