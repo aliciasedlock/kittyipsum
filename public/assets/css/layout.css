@@ -38,7 +38,7 @@ body {font-family: Arial; margin:0; padding:0}
 .ki h1 a {color:#000; text-decoration:none;}
 .ki h2 {font-family:"SFCartoonistHandRegular"; font-size:2em}
 
-.ki nav {background: #eaeaea; padding:.5em 1em; text-align:center}
+.ki nav {background: #eaeaea; border-bottom:1px solid #ccc; padding:.5em 1em; text-align:center}
 .ki nav a {color:purple; font-size:.95em; margin: 0 2.5em; text-decoration: none;}
 
 footer {background: #eaeaea; color:#666; font-size:.85em; margin: 2em 0 0; padding: 3em; text-align:center;}
