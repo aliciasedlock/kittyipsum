@@ -70,6 +70,17 @@ footer {background: #eaeaea; color:#666; font-size:.85em; margin: 2em 0 0; paddi
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#c92fc9', EndColorStr='#800080');
     text-shadow:-1px -1px 1px #440944
   }
+  .ki-right button:hover {
+    background-color: #aa26aa;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(170, 38, 170)),to(rgb(201, 47, 201)));
+    background-image: -webkit-linear-gradient(top, rgb(170, 38, 170), rgb(201, 47, 201));
+    background-image: -moz-linear-gradient(top, rgb(170, 38, 170), rgb(201, 47, 201));
+    background-image: -o-linear-gradient(top, rgb(170, 38, 170), rgb(201, 47, 201));
+    background-image: -ms-linear-gradient(top, rgb(170, 38, 170), rgb(201, 47, 201));
+    background-image: linear-gradient(top, rgb(170, 38, 170), rgb(201, 47, 201));
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#aa26aa', EndColorStr='#c92fc9');
+    text-shadow:-1px -1px 1px #440944
+  }
 
 
 
