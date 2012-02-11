@@ -2,15 +2,15 @@ var AppRouter = Backbone.Router.extend({
   
   routes: {
     "": "search",
-    "results/:type/:count": "results"
+    "results/:type/:startWith/:withLatin/:count": "results"
   },
   
   search: function() {
     var search = new Search;
   },
   
-  results: function(type, count) {
-    var results = new Results({type:type, count:count});
+  results: function(type, startWith, withLatin, count) {
+    var results = new Results({type:type, startWith:startWith, withLatin:withLatin, count:count});
   }
   
 });

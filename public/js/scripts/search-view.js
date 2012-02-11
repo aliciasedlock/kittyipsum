@@ -30,12 +30,14 @@ var Search = Backbone.View.extend({
   
   generate: function() {
     var num = $('.count-input').val(),
-    self = this;
+    self = this,
+    startWith = $('#start-with-ipsum:checked').length,
+    withLatin = $('#with-latin:checked').length;
     
     this.validate();
     
     if ($('div.error').html() == '') {
-      Backbone.history.navigate("results/paragraph/" + num, {trigger: true});
+      Backbone.history.navigate("results/paragraph/" + startWith + "/" + withLatin + "/" + num, {trigger: true});
     }
   }
   

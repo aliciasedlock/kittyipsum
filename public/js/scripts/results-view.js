@@ -6,7 +6,7 @@ var Results = Backbone.View.extend({
     var generatedText;
     _.bindAll(this, 'render');
     
-    this.ipsum = new Ipsum({type:this.options.type, count:this.options.count});
+    this.ipsum = new Ipsum({type:this.options.type, startWith:this.options.startWith, withLatin:this.options.withLatin, count:this.options.count});
     this.ipsum.fetch({success: this.render});
   },
   
@@ -28,8 +28,8 @@ var Results = Backbone.View.extend({
       
     });
     
-    template = _.template($('#search').html());
-    this.el.append(template);
+    //template = _.template($('#search').html());
+    //this.el.append(template);
   }
   
 });
