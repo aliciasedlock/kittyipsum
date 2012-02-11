@@ -31,28 +31,45 @@
 ------------------------*/
 
 body {font-family: Arial; margin:0; padding:0}
+a {color:#a719a7; text-decoration:none}
 
 .ki {background-color: #fff; margin:0 auto; min-height:600px; width:650px}
 
 .ki h1 {font-family: "SFCartoonistHandBold"; font-size:4em; margin:0; padding:0}
-.ki h1 a {color:#000; text-decoration:none;}
+.ki h1 a {color:#000; text-decoration:none}
 .ki h2 {font-family:"SFCartoonistHandRegular"; font-size:2em}
 
 .ki nav {background: #eaeaea; border-bottom:1px solid #ccc; padding:.5em 1em; text-align:center}
-.ki nav a {color:purple; font-size:.95em; margin: 0 2.5em; text-decoration: none;}
+.ki nav a {color:#a719a7; font-size:.95em; margin: 0 2.5em; text-decoration: none}
 
-footer {background: #eaeaea; color:#666; font-size:.85em; margin: 2em 0 0; padding: 3em; text-align:center;}
+footer {background: #eaeaea; color:#666; font-size:.85em; margin: 2em 0 0; padding: 3em; text-align:center}
 
 
 /* = Search Template
 ------------------------*/
 
 .ki-search {text-align:center}
-.ki-search h2 {margin:1em 0 .25em 0em;}
-.ki-search .count-input {font-size: 2em; margin-bottom:1em; text-align:center; width: 3em}
+.ki-search h2 {margin:1em 0 .25em 0em}
+.ki-search .count-input {font-size: 2em; margin-bottom:2em; text-align:center; width: 3em}
 .ki div.error {color:red; margin:1em 0 1em}
 .ki-left {float:left; text-align:left; width:50%}
+  .ki-left input[type=checkbox] {margin-right:.5em}
+  .ki-left label {vertical-align:middle}
 .ki-right {float:right; width:49%}
+  .ki-right button {border:1px solid #eaeaea; color:white; font-size:1.2em; padding:.5em 1em;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius:30px;
+    background-color: #c92fc9;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(201, 47, 201)),to(rgb(128, 0, 128)));
+    background-image: -webkit-linear-gradient(top, rgb(201, 47, 201), rgb(128, 0, 128));
+    background-image: -moz-linear-gradient(top, rgb(201, 47, 201), rgb(128, 0, 128));
+    background-image: -o-linear-gradient(top, rgb(201, 47, 201), rgb(128, 0, 128));
+    background-image: -ms-linear-gradient(top, rgb(201, 47, 201), rgb(128, 0, 128));
+    background-image: linear-gradient(top, rgb(201, 47, 201), rgb(128, 0, 128));
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#c92fc9', EndColorStr='#800080');
+    text-shadow:-1px -1px 1px #440944
+  }
 
 
 
