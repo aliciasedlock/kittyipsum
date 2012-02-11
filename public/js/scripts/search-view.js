@@ -3,7 +3,7 @@ var Search = Backbone.View.extend({
   
   events: {
     "click button.get-ipsum": "generate",
-    "blur input.count-input": "isInputValid"
+    "blur input.count-input": "validate"
   },
   
   initialize: function() {
@@ -11,13 +11,32 @@ var Search = Backbone.View.extend({
     this.el.html(template);
   },
   
-  isInputValid: function(event) {
+  validate: function() {
+    var input = $('.count-input').val(),
+    errorSpan = $('div.error'),
+    isOnlyDigits = new RegExp("^[0-9]$");
+    msg = '';
+    
+    if (input == '' || input == null) {
+      msg = "You didn't enter a number!";
+    }
+    else if (!isOnlyDigits.test(input)) {
+     msg = "That's not a valid number!"
+    }
+    
+    errorSpan.text(msg);
     
   },
   
   generate: function() {
-    var num = $('.count-input').val();
-    Backbone.history.navigate("results/paragraph/" + num, {trigger: true});
+    var num = $('.count-input').val(),
+    self = this;
+    
+    this.validate();
+    
+    if ($('div.error').html() == '') {
+      Backbone.history.navigate("results/paragraph/" + num, {trigger: true});
+    }
   }
   
 });

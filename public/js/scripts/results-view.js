@@ -12,12 +12,20 @@ var Results = Backbone.View.extend({
   
   render: function() {
     var template = _.template($('#results').html()),
+    textToAppend;
     genText = this.ipsum.attributes.generatedText;
     this.el.html(template);
     
     $.each(genText, function(){
-      var appendText = "<p>" + this + "</p>";
+      textToAppend = '';
+      
+      $.each(this, function(){
+        textToAppend += this;
+      });
+      
+      var appendText = "<p>" + textToAppend + "</p>";
       $('.ki-results').append(appendText);
+      
     });
     
     template = _.template($('#search').html());
