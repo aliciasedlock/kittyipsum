@@ -32,6 +32,7 @@
 
 body {font-family: Arial; margin:0; padding:0}
 a {color:#a719a7; text-decoration:none}
+button, input[type=checkbox], label {cursor:pointer}
 
 .ki {background-color: #fff; margin:0 auto; min-height:600px; width:650px}
 
