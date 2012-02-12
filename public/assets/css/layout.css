@@ -39,6 +39,7 @@ button, input[type=checkbox], label {cursor:pointer}
 .ki h1 {font-family: "SFCartoonistHandBold"; font-size:4em; margin:0; padding:0}
 .ki h1 a {color:#000; text-decoration:none}
 .ki h2 {font-family:"SFCartoonistHandRegular"; font-size:2em}
+.ki img {margin-left:7em}
 
 .ki nav {background: #eaeaea; border-bottom:1px solid #ccc; padding:.5em 1em; text-align:center}
 .ki nav a {color:#a719a7; font-size:.95em; margin: 0 2.5em; text-decoration: none}
