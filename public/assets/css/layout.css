@@ -51,6 +51,10 @@ a {
 	display:inline-block;
 }
 
+.ki-header h1 a {
+	color: #000;
+}
+
 .ki-header h2 {
 	display: inline;
 	font-size: 1.1em;
