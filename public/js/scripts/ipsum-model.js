@@ -85,6 +85,7 @@ var Ipsum = Backbone.Model.extend({
     }
   },
   
+	// This gives our Ispum some sentence structuring
   punctuateIpsum: function (array) {
     var ipsum = [],
     newP;

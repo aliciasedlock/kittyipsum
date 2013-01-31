@@ -1,88 +1,126 @@
 
-/* = Fonts
+/* =Fonts
 ------------------------*/
 
 @font-face {
-    font-family: 'SFCartoonistHandRegular';
-    src: url('../fonts/SF_Cartoonist_Hand-webfont.eot');
-    src: url('../fonts/SF_Cartoonist_Hand-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/SF_Cartoonist_Hand-webfont.woff') format('woff'),
-         url('../fonts/SF_Cartoonist_Hand-webfont.ttf') format('truetype'),
-         url('../fonts/SF_Cartoonist_Hand-webfont.svg#SFCartoonistHandRegular') format('svg');
+    font-family: 'BlackoutMidnight';
+    src: url('../fonts/Blackout-Midnight-webfont.eot');
+    src: url('../fonts/Blackout-Midnight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Blackout-Midnight-webfont.woff') format('woff'),
+         url('../fonts/Blackout-Midnight-webfont.ttf') format('truetype'),
+         url('../fonts/Blackout-Midnight-webfont.svg#BlackoutMidnight') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 
-@font-face {
-    font-family: 'SFCartoonistHandBold';
-    src: url('../fonts/SF_Cartoonist_Hand_Bold-webfont.eot');
-    src: url('../fonts/SF_Cartoonist_Hand_Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/SF_Cartoonist_Hand_Bold-webfont.woff') format('woff'),
-         url('../fonts/SF_Cartoonist_Hand_Bold-webfont.ttf') format('truetype'),
-         url('../fonts/SF_Cartoonist_Hand_Bold-webfont.svg#SFCartoonistHandBold') format('svg');
-    font-weight: normal;
-    font-style: normal;
+/* =Global styles
+------------------------*/
 
+body {
+	font-family: Arial;
+	margin:0;
+	padding:0
 }
 
+a {
+	color:#6064ac;
+	text-decoration:none
+}
 
-/* = Global Layout
+.ki-container {
+	width:50%;
+	margin:0 auto;
+	position:relative;
+}
+
+/* =Header styles
 ------------------------*/
 
-body {font-family: Arial; margin:0; padding:0}
-a {color:#a719a7; text-decoration:none}
-button, input[type=checkbox], label {cursor:pointer}
+.ki-header {
+	padding-bottom: .2em;
+	border-bottom: 1px solid #000;
+	margin-bottom:2em;
+}
 
-.ki {background-color: #fff; margin:0 auto; min-height:600px; width:650px}
+.ki-header h1 {
+	font-family: 'BlackoutMidnight';
+	width:32%;
+	font-size:5em;
+	margin:0;
+	display:inline-block;
+}
 
-.ki h1 {font-family: "SFCartoonistHandBold"; font-size:4em; margin:0; padding:0}
-.ki h1 a {color:#000; text-decoration:none}
-.ki h2 {font-family:"SFCartoonistHandRegular"; font-size:2em}
-.ki img {margin-left:7em}
+.ki-header h2 {
+	display: inline;
+	font-size: 1.1em;
+	text-align: right;
+	font-style:italic;
+	margin-left:2.7em;
+}
 
-.ki nav {background: #eaeaea; border-bottom:1px solid #ccc; padding:.5em 1em; text-align:center}
-.ki nav a {color:#a719a7; font-size:.95em; margin: 0 2.5em; text-decoration: none}
+/* =Footer styles
+------------------------*/
+.ki-footer {
+	width:100%;
+	margin-top:4em;
+}
 
-footer {background: #eaeaea; color:#666; font-size:.85em; margin: 2em 0 0; padding: 3em; text-align:center}
+.ki-footer span {
+	display: block;
+	text-align: center;
+}
 
-
-/* = Search Template
+/* =Search styles
 ------------------------*/
 
-.ki-search {text-align:center}
-.ki-search h2 {margin:1em 0 .25em 0em}
-.ki-search .count-input {font-size: 2em; margin-bottom:2em; text-align:center; width: 3em}
-.ki div.error {color:red; margin:1em 0 1em}
-.ki-left {float:left; text-align:left; width:50%}
-  .ki-left input[type=checkbox] {margin-right:.5em}
-  .ki-left label {vertical-align:middle}
-.ki-right {float:right; width:49%}
-  .ki-right button {border:1px solid #eaeaea; color:white; font-size:1.2em; padding:.5em 1em;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius:30px;
-    background-color: #c92fc9;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(201, 47, 201)),to(rgb(128, 0, 128)));
-    background-image: -webkit-linear-gradient(top, rgb(201, 47, 201), rgb(128, 0, 128));
-    background-image: -moz-linear-gradient(top, rgb(201, 47, 201), rgb(128, 0, 128));
-    background-image: -o-linear-gradient(top, rgb(201, 47, 201), rgb(128, 0, 128));
-    background-image: -ms-linear-gradient(top, rgb(201, 47, 201), rgb(128, 0, 128));
-    background-image: linear-gradient(top, rgb(201, 47, 201), rgb(128, 0, 128));
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#c92fc9', EndColorStr='#800080');
-    text-shadow:-1px -1px 1px #440944
-  }
-  .ki-right button:hover {
-    background-color: #aa26aa;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(170, 38, 170)),to(rgb(201, 47, 201)));
-    background-image: -webkit-linear-gradient(top, rgb(170, 38, 170), rgb(201, 47, 201));
-    background-image: -moz-linear-gradient(top, rgb(170, 38, 170), rgb(201, 47, 201));
-    background-image: -o-linear-gradient(top, rgb(170, 38, 170), rgb(201, 47, 201));
-    background-image: -ms-linear-gradient(top, rgb(170, 38, 170), rgb(201, 47, 201));
-    background-image: linear-gradient(top, rgb(170, 38, 170), rgb(201, 47, 201));
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#aa26aa', EndColorStr='#c92fc9');
-    text-shadow:-1px -1px 1px #440944
-  }
+.ki-search h2 {
+	margin:.5em 0;
+	display:inline-block;
+}
 
+.ki-search .count-input {
+	width:50px;
+	font-size:1.5em;
+	margin-left:.5em;
+}
 
+.ki-search .get-ipsum {
+	width:100%;
+	padding:1em 0;
+	text-align:center;
+	margin:3em 0;
+	font-size:1.2em;
+	color:#fff;
+	text-shadow: 0px 1px 2px #000;
+	background-color: #b8afd1;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(184, 175, 209)),to(rgb(153, 147, 197)));
+	background-image: -webkit-linear-gradient(top, rgb(184, 175, 209), rgb(153, 147, 197));
+	background-image: -moz-linear-gradient(top, rgb(184, 175, 209), rgb(153, 147, 197));
+	background-image: -ms-linear-gradient(top, rgb(184, 175, 209), rgb(153, 147, 197));
+	background-image: linear-gradient(top, rgb(184, 175, 209), rgb(153, 147, 197));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#b8afd1', EndColorStr='#9993c5');
+}
 
+.ki-search input[type=checkbox], .ki-search label {
+	vertical-align:middle;
+	cursor:pointer;
+}
+
+.ki-search label {
+	margin-right:3em;
+	margin-left:.3em;
+}
+
+.ki-search .error {
+	color:red;
+	height:1em;
+}
+
+/* =Result styles
+------------------------*/
+
+.ki-results {
+	padding-bottom:1.5em;
+	border-bottom:1px solid #000;
+}

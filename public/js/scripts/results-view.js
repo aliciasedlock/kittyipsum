@@ -28,8 +28,8 @@ var Results = Backbone.View.extend({
       
     });
     
-    //template = _.template($('#search').html());
-    //this.el.append(template);
+    template = _.template($('#search').html());
+    this.el.append(template);
   }
   
 });
