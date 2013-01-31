@@ -14,13 +14,13 @@ var Search = Backbone.View.extend({
   validate: function() {
     var input = $('.count-input').val(),
     errorSpan = $('div.error'),
-    isOnlyDigits = new RegExp("^[0-9]$");
+    value = parseInt(input),
     msg = '';
     
     if (input == '' || input == null) {
       msg = "You didn't enter a number!";
     }
-    else if (!isOnlyDigits.test(input)) {
+    else if (value === NaN) {
      msg = "That's not a valid number!"
     }
     
